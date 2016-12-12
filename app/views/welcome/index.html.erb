@@ -1,0 +1,48 @@
+<%= render 'shared/palette' %>
+
+<section class="u-bg--lightgray u-padding-y-50">
+  <div class="container">
+    <div class="row">
+
+      <div class="offset-md-4 col-sm-4">
+        <%= card(variant: 'secondary-115', js: true, js_state: 'is-locked', js_controller: 'master') do %>
+          <%= card(variant: 'secondary') do %>
+
+            <i class="o-icon o-icon--xl u-color--secondary u-display--block u-margin--x-auto">
+              <%= render 'shared/loader' %>
+            </i>
+
+          <% end %>
+          <button
+            class="o-btn js-state-manipulator"
+            data-set-state="is-unlocked"
+            data-state-manipulator="master">
+            Unlock
+          </button>
+
+          <button
+            class="o-btn js-state-manipulator"
+            data-set-state="is-locked"
+            data-state-manipulator="master">
+            Lock
+          </button>
+
+          <button
+            class="o-btn js-state-manipulator"
+            data-set-state="is-loading"
+            data-state-manipulator="master">
+            Load
+          </button>
+
+          <button
+            class="o-btn js-state-manipulator"
+            data-set-state="is-neutral"
+            data-state-manipulator="master">
+            Stop Load
+          </button>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+</section>

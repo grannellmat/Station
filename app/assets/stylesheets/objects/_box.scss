@@ -1,0 +1,13 @@
+
+
+//  ================================
+//  ## Object --> Box
+//  ================================
+
+
+.o-box {
+  border-radius: $br;
+  box-shadow: inset 0 0 2px 2px $inset-shadow;
+  margin: 15px 0;
+  padding: 15px;
+}

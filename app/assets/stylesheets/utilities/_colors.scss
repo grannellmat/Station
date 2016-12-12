@@ -1,0 +1,18 @@
+
+
+//  ================================
+//  ## Utility --> Colors
+//  ================================
+
+
+.u-bg {
+  @include variant-generator();
+}
+
+.u-color {
+  @include variant-generator($prop: 'color');
+}
+
+.u-fill {
+  @include variant-generator($prop: 'fill');
+}

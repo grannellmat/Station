@@ -1,0 +1,16 @@
+
+
+//  ================================
+//  ## Mixins --> Generators
+//  ================================
+
+
+@mixin variant-generator($variants: $colors, $prop: 'background') {
+  @each $variant in map-keys($variants) {
+    $color: map-get($variants, $variant);
+
+    &--#{$variant} {
+      #{$prop}: $color;
+    }
+  }
+};

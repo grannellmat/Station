@@ -1,0 +1,122 @@
+
+
+//  ================================
+//  ## Config --> Colormap
+//  ================================
+
+$color-primary: #59ebd2;
+$color-secondary: #59deeb;
+
+$color-night: #405559;
+$inset-shadow: rgba(#405559, .05);
+$color-shade: #5f7e84;
+$color-silver: #c3d5d9;
+$color-gray: #e6f0f2;
+$color-lightgray: #f5f9fa;
+$color-white: #fff;
+
+$color-error: #eb5959;
+$color-warning: #fad932;
+$color-success: #59ebd2;
+
+
+$color-map: (
+  'primary': (
+    70: lighten($color-primary, 14%),
+    85: lighten($color-primary, 7%),
+    100: $color-primary,
+    115: darken($color-primary, 7%),
+    130: darken($color-primary, 14%),
+  ),
+  'secondary': (
+    70: lighten($color-secondary, 14%),
+    85: lighten($color-secondary, 7%),
+    100: $color-secondary,
+    115: darken($color-secondary, 7%),
+    130: darken($color-secondary, 14%),
+  ),
+  'night': (
+    A5: rgba($color-night, .05),
+    100: $color-night,
+    115: darken($color-night, 7%),
+    130: darken($color-night, 14%),
+  ),
+  'shade': (
+    100: $color-shade,
+    115: darken($color-shade, 7%),
+    130: darken($color-shade, 14%),
+  ),
+  'silver': (
+    100: $color-silver,
+    115: darken($color-silver, 7%),
+    130: darken($color-silver, 14%),
+  ),
+  'gray': (
+    100: $color-gray,
+    115: darken($color-gray, 7%),
+    130: darken($color-gray, 14%),
+  ),
+  'lightgray': (
+    100: $color-lightgray,
+  ),
+  'white': (
+    100: $color-white,
+  ),
+  'error': (
+    70: lighten($color-error, 14%),
+    85: lighten($color-error, 7%),
+    100: $color-error,
+    115: darken($color-error, 7%),
+    130: darken($color-error, 14%),
+  ),
+  'warning': (
+    70: lighten($color-warning, 14%),
+    85: lighten($color-warning, 7%),
+    100: $color-warning,
+    115: darken($color-warning, 7%),
+    130: darken($color-warning, 14%),
+  ),
+  'success': (
+    70: lighten($color-success, 14%),
+    85: lighten($color-success, 7%),
+    100: $color-success,
+    115: darken($color-success, 7%),
+    130: darken($color-success, 14%),
+  ),
+);
+
+
+$colors: (
+  // Brand
+  'primary': color('primary'),
+  'primary-115': color('primary', 115),
+  'primary-130': color('primary', 130),
+  'secondary': color('secondary'),
+  'secondary-115': color('secondary', 115),
+  'secondary-130': color('secondary', 130),
+  // Greyscale
+  'night': color('night'),
+  'night-115': color('night', 115),
+  'night-130': color('night', 130),
+  'shade': color('shade'),
+  'shade-115': color('shade', 115),
+  'shade-130': color('shade', 130),
+  'silver': color('silver'),
+  'silver-115': color('silver', 115),
+  'silver-130': color('silver', 130),
+  'gray': color('gray'),
+  'gray-115': color('gray', 115),
+  'gray-130': color('gray', 130),
+  'lightgray': color('lightgray'),
+  'white': color('white'),
+  // Utility
+  'error': color('error'),
+  'error-115': color('error', 115),
+  'error-130': color('error', 130),
+  'warning': color('warning'),
+  'warning-115': color('warning', 115),
+  'warning-130': color('warning', 130),
+  'success': color('success'),
+  'success-115': color('success', 115),
+  'success-130': color('success', 130)
+);
