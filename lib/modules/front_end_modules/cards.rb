@@ -2,17 +2,16 @@ module FrontEndModules::Cards
 
   def card(options={}, &block)
     options = {
-      class: '',
-      variant: 'white',
+      class: '',        ## Any additional classes
+      variant: 'white', ## Color variant of the card
 
       # Js State Controller
-      js: false,
-      js_state: false,
-      js_controller: false
-
+      js: false,           ## JS Enabled card
+      js_state: false,     ## State on load
+      js_controller: false ## What controls the state of the card
     }.merge(options)
 
-    card_class = " o-box"
+    card_class = " o-box o-lockable"
     card_class << " u-bg--#{options[:variant]}"
 
     if options[:js]
