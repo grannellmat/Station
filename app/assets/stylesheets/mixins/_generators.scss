@@ -14,3 +14,34 @@
     }
   }
 };
+
+@mixin text-generator($text: $text-hieracy) {
+  @each $text-variant, $text-sizes in $text {
+    $variant: $text-variant;
+
+    $sm: map-get(map-get($text, $variant), 'sm');
+    $lg: map-get(map-get($text, $variant), 'lg');
+
+    &--#{$variant} {
+      font-size: $sm;
+
+      @include respond-to('small') {
+        font-size: $lg;
+      }
+    }
+  }
+}
+
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}

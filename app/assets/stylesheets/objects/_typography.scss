@@ -9,3 +9,9 @@ body {
   font-family: $font-primary;
   font-size: 16px;
 }
+
+.o-text {
+  @include text-generator($text-hieracy);
+
+  font-family: $font-primary;
+}

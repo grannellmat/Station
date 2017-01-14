@@ -6,3 +6,18 @@
 
 $font-primary: "sofia-pro-soft", sans-serif;
 $br: 3px;
+
+$breakpoints: (
+  'small': 767px,
+  'medium': 992px,
+  'large': 1200px
+);
+
+$text-hieracy: (
+  'heading':    ('lg': 46px, 'sm': 38px),
+  'subheading': ('lg': 38px, 'sm': 32px),
+  'title':      ('lg': 32px, 'sm': 24px),
+  'subtitle':   ('lg': 24px, 'sm': 20px),
+  'body':       ('lg': 16px, 'sm': 14px),
+  'label':      ('lg': 13px, 'sm': 12px)
+);
