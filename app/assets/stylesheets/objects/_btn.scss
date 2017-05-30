@@ -3,12 +3,49 @@
 //  ## Object --> Button
 //  ================================
 
+%hover--pointer     { &:hover { cursor: pointer; } }
+%hover--not-allowed { &:hover { cursor: not-allowed; } }
+
 .o-btn {
+  @extend %o-text--label;
+  @extend %hover--pointer;
+
+
   border: 0;
   border-radius: $br;
+  border-bottom: solid 2px;
   outline: 0;
   background: color('white');
 
   margin: 15px 0;
   padding: 15px;
+  min-width: 100px;
+  text-align: center;
+
+  &--left { float: left; }
+  &--right { float: right; }
+
+  &--action      { color: color('secondary'); border-color: color('secondary');}
+  &--error      { color: color('error'); border-color: color('error');}
+  &--warning    { color: color('warning'); border-color: color('warning');}
+  &--success    { color: color('success'); border-color: color('success');}
+
+  &--night      { color: color('night'); border-color: color('night');}
+  &--white      { color: color('white'); border-color: color('white');}
+
+  &--disabled {
+    @extend %hover--not-allowed;
+
+    color: color('silver');
+    border-color: color('silver');
+
+    &.v-night {
+      color: color('shade');
+      border-color: color('shade');
+      }
+  }
+
+  &.v-night { background: color('night'); }
 }
+
+

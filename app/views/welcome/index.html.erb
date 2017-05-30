@@ -1,55 +1,65 @@
 <section class="u-bg--night u-padding-y-50">
   <div class="container">
     <h1 class="o-text o-text--heading u-color--white">Station</h1>
-    <h2 class="o-text o-text--subheading u-color--white">Where we arrive @ good design</h2>
+    <h2 class="o-text o-text--subheading u-color--gray">Where we arrive @ good design</h2>
+  </div>
+</section>
+
+<section class="u-bg--success u-padding-y-50">
+  <div class="container">
+    <h2 class="o-text o-text--subheading u-color--night u-margin-0">Where we arrive @ good design</h2>
+  </div>
+</section>
+
+<section class="u-bg--error u-padding-y-50">
+  <div class="container">
+    <h2 class="o-text o-text--subheading u-color--white u-margin-0">Where we arrive @ good design</h2>
+  </div>
+</section>
+
+<section class="u-bg--secondary u-padding-y-50">
+  <div class="container">
+    <h2 class="o-text o-text--subheading u-color--white u-margin-0">Where we arrive @ good design</h2>
   </div>
 </section>
 
 <%= render 'shared/palette' %>
+<%= render 'shared/buttons' %>
+
 
 <section class="u-bg--lightgray u-padding-y-50">
   <div class="container">
     <div class="row">
 
       <div class="offset-md-4 col-sm-4">
-        <%= card(variant: 'secondary-115', js: true, js_state: 'is-locked', js_controller: 'master') do %>
-          <%= card(variant: 'secondary') do %>
+        <%= card(variant: 'gray', js: true, js_controller: 'master') do %>
+          <%= card(variant: 'white') do %>
 
             <i class="o-icon o-icon--xl u-color--secondary u-display--block u-margin--x-auto">
               <%= render 'shared/loader' %>
             </i>
 
           <% end %>
-          <button
-            class="o-btn js-state-manipulator"
-            data-set-state="is-unlocked"
-            data-state-manipulator="master">
-            Unlock
-          </button>
+          <div class="u-clearfix">
+            <button
+              class="o-btn o-btn--right o-btn--success js-state-manipulator"
+              data-set-state="is-loading"
+              data-state-manipulator="master">
+              Load
+            </button>
 
-          <button
-            class="o-btn js-state-manipulator"
-            data-set-state="is-locked"
-            data-state-manipulator="master">
-            Lock
-          </button>
-
-          <button
-            class="o-btn js-state-manipulator"
-            data-set-state="is-loading"
-            data-state-manipulator="master">
-            Load
-          </button>
-
-          <button
-            class="o-btn js-state-manipulator"
-            data-set-state="is-neutral"
-            data-state-manipulator="master">
-            Stop Load
-          </button>
+            <button
+              class="o-btn o-btn--left o-btn--error js-state-manipulator"
+              data-set-state="is-neutral"
+              data-state-manipulator="master">
+              Stop
+            </button>
+          </div>
         <% end %>
       </div>
 
     </div>
   </div>
 </section>
+
+

@@ -14,10 +14,10 @@ $breakpoints: (
 );
 
 $text-hieracy: (
-  'heading':    ('lg': 46px, 'sm': 38px),
-  'subheading': ('lg': 38px, 'sm': 32px),
-  'title':      ('lg': 32px, 'sm': 24px),
-  'subtitle':   ('lg': 24px, 'sm': 20px),
-  'body':       ('lg': 16px, 'sm': 14px),
-  'label':      ('lg': 13px, 'sm': 12px)
+  'heading':    ('lg': 2.074em, 'sm': 2.074em),
+  'subheading': ('lg': 1.728em, 'sm': 1.728em),
+  'title':      ('lg': 1.44em,  'sm': 1.44em),
+  'subtitle':   ('lg': 1.2em,   'sm': 1.2em),
+  'body':       ('lg': 1em,     'sm': 1em),
+  'label':      ('lg': 0.833em, 'sm': 0.833em)
 );
