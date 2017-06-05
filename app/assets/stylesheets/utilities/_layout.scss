@@ -35,3 +35,11 @@
 .u-padding-y-100 {
   padding: 100px 0;
 }
+
+.u-spacer {
+  &--xs { @include spacer(map-get($spacers, 'x-small')); }
+  &--sm { @include spacer(map-get($spacers, 'small')); }
+  &--md { @include spacer(map-get($spacers, 'medium')); }
+  &--lg { @include spacer(map-get($spacers, 'large')); }
+  &--xl { @include spacer(map-get($spacers, 'x-large')); }
+ }

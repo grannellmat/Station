@@ -45,3 +45,15 @@
         + "Please make sure it is defined in `$breakpoints` map.";
   }
 }
+
+
+@mixin spacer($space) {
+  margin: $space;
+
+  &-t { margin-top: $space; }
+  &-r { margin-right: $space; }
+  &-b { margin-bottom: $space; }
+  &-l { margin-left: $space; }
+  &-x { margin-left: $space; margin-right: $space; }
+  &-y { margin-top: $space; margin-bottom: $space; }
+}

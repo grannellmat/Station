@@ -17,35 +17,32 @@
   outline: 0;
   background: color('white');
 
-  margin: 15px 0;
+  margin-top: 15px;
   padding: 15px;
   min-width: 100px;
   text-align: center;
+}
 
-  &--left { float: left; }
+.c-btn {
+  &--left  { float: left; }
   &--right { float: right; }
 
-  &--action      { color: color('secondary'); border-color: color('secondary');}
-  &--error      { color: color('error'); border-color: color('error');}
-  &--warning    { color: color('warning'); border-color: color('warning');}
-  &--success    { color: color('success'); border-color: color('success');}
-
-  &--night      { color: color('night'); border-color: color('night');}
-  &--white      { color: color('white'); border-color: color('white');}
+  &--action  { color: color('secondary'); border-color: color('secondary');}
+  &--error   { color: color('error'); border-color: color('error');}
+  &--warning { color: color('warning'); border-color: color('warning');}
+  &--success { color: color('success', 130); border-color: color('success');}
+  &--night   { color: color('night'); border-color: color('night');}
+  &--white   { color: color('white'); border-color: color('white');}
 
   &--disabled {
     @extend %hover--not-allowed;
 
     color: color('silver');
     border-color: color('silver');
-
-    &.v-night {
-      color: color('shade');
-      border-color: color('shade');
-      }
   }
 
   &.v-night { background: color('night'); }
+  &.v-night-115 { background: color('night', 115); }
+  &.v-lightgray { background: color('lightgray'); }
 }
-
 

@@ -1,0 +1,25 @@
+
+
+
+//  ================================
+//  ## Object --> Button
+//  ================================
+
+.o-label__wrapper {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(100% - 20px);
+}
+
+.o-label {
+  @extend %o-text--label;
+  margin: 0;
+
+
+  &--right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
