@@ -13,7 +13,7 @@
 
   border: 0;
   border-radius: $br;
-  border-bottom: solid 2px;
+  border-bottom: solid 3px;
   outline: 0;
   background: color('white');
 
@@ -27,18 +27,27 @@
   &--left  { float: left; }
   &--right { float: right; }
 
-  &--action  { color: color('secondary'); border-color: color('secondary');}
-  &--error   { color: color('error'); border-color: color('error');}
-  &--warning { color: color('warning'); border-color: color('warning');}
-  &--success { color: color('success', 130); border-color: color('success');}
-  &--night   { color: color('night'); border-color: color('night');}
-  &--white   { color: color('white'); border-color: color('white');}
+  &.c-btn--action  { color: color('secondary'); border-color: color('secondary');}
+  &.c-btn--error   { color: color('error'); border-color: color('error');}
+  &.c-btn--warning { color: color('warning'); border-color: color('warning');}
+  &.c-btn--success { color: color('success', 130); border-color: color('success');}
+  &.c-btn--night   { color: color('night'); border-color: color('night');}
+  &.c-btn--white   { color: color('white'); border-color: color('white');}
 
   &--disabled {
     @extend %hover--not-allowed;
 
     color: color('silver');
     border-color: color('silver');
+  }
+
+  &.v-full {
+    &.c-btn--action  { background: color('secondary'); border-color: color('secondary', 115); color: color('white');}
+    &.c-btn--error   { background: color('error'); border-color: color('error', 115); color: color('white');}
+    &.c-btn--warning { background: color('warning'); border-color: color('warning', 115); color: color('white');}
+    &.c-btn--success { background: color('success'); border-color: color('success', 130); color: color('white');}
+    &.c-btn--night   { background: color('night'); border-color: color('night', 115); color: color('white');}
+    &.c-btn--white   { background: color('white'); border-color: color('white', 115); color: color('night');}
   }
 
   &.v-night { background: color('night'); }
