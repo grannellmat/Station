@@ -1,0 +1,62 @@
+
+
+
+//  ================================
+//  ## Object --> Tags
+//  ================================
+
+@mixin tag-variant($background, $text-color, $strength: 100) {
+  color: color($text-color);
+
+  @if $strength == 100 {
+    background: color($background);
+    box-shadow: inset 0 0 1px 1px darken(color($background), 10%);
+  } @else {
+    background: color($background, $strength);
+    box-shadow: inset 0 0 1px 1px darken(color($background, $strength), 5%);
+  }
+}
+
+@mixin tag-border-variant($color) {
+  border: 2px solid color($color);
+  box-shadow: none;
+  background: color('white');
+  color: color($color);
+}
+
+
+.o-tag {
+  @extend %o-text--label;
+
+  display: inline-block;
+  border-radius: $br;
+  margin: 2px;
+  padding: 3px 5px;
+
+  &.v--primary   { @include tag-variant('primary', 'white'); }
+  &.v--secondary { @include tag-variant('secondary', 'white'); }
+  &.v--error     { @include tag-variant('error', 'white'); }
+  &.v--error-115 { @include tag-variant('error', 'white', 115); }
+  &.v--error-130 { @include tag-variant('error', 'white', 130); }
+  &.v--warning   { @include tag-variant('warning', 'white'); }
+  &.v--night     { @include tag-variant('night', 'white'); }
+  &.v--shade     { @include tag-variant('shade', 'white'); }
+  &.v--silver    { @include tag-variant('silver', 'white'); }
+  &.v--gray      { @include tag-variant('gray', 'night'); }
+  &.v--lightgray { @include tag-variant('lightgray', 'shade'); }
+  &.v--white     { @include tag-variant('white', 'shade'); }
+
+
+  &.v--border {
+    &.v--primary   { @include tag-border-variant('primary'); }
+    &.v--secondary { @include tag-border-variant('secondary'); }
+    &.v--error     { @include tag-border-variant('error'); }
+    &.v--warning   { @include tag-border-variant('warning'); }
+    &.v--night     { @include tag-border-variant('night'); }
+    &.v--shade     { @include tag-border-variant('shade'); }
+    &.v--silver    { @include tag-border-variant('silver'); }
+    &.v--gray      { @include tag-border-variant('gray'); }
+    &.v--lightgray { @include tag-border-variant('lightgray'); }
+    &.v--white     { @include tag-border-variant('white'); }
+  }
+}

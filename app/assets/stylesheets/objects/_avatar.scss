@@ -1,0 +1,23 @@
+
+
+
+//  ================================
+//  ## Object --> Avatar
+//  ================================
+
+
+.o-avatar {
+  display: inline-block;
+  border-radius: $br;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: none;
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+
+  &.v--sm { height: 40px; width: 40px; }
+  &.v--md { height: 60px; width: 60px; }
+  &.v--lg { height: 80px; width: 80px; }
+  &.v--xl { height: 100px; width: 100px; }
+}

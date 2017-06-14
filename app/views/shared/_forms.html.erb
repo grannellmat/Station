@@ -3,158 +3,48 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 offset-md-2 col-md-4">
-        <h1 class="o-text--title u-color--white">
-          Create a person
-        </h1>
+        <h1 class="o-text--title u-color--white">Create a person</h1>
         <p class="o-text--body u-color--gray">
           This is body text for that form where we describe why on earth you would give information to anyone on the internet anymore.
         </p>
       </div>
       <div class="col-xs-12 col-md-4">
-        <%= card(variant: 'white') do %>
-          <div class="o-label__wrapper">
-            <label for="1" class="o-label u-color--shade">First Name</label>
-            <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
-          </div>
-          <input id="1" class="o-input" />
-          <div class="o-label__wrapper">
-            <label for="2" class="o-label u-color--shade">Last Name</label>
-            <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
-          </div>
-          <input id="2" class="o-input" />
-          <div class="u-clearfix">
-            <button class="o-btn c-btn c-btn--right c-btn--success v-full"> Create Person </button>
-            <button class="o-btn c-btn c-btn--left c-btn--error v-lightgray"> Cancel </button>
-          </div>
-        <% end %>
-      </div>
-      <div class="col-xs-12 col-md-8">
         <%= card(variant: 'error-115') do %>
           <h2 class="o-text--subtitle u-color--white">Create a person</h2>
+          <div>
+            <div class="o-tag v--error-130">Important</div>
+            <div class="o-tag v--error-130">Secure</div>
+          </div>
           <%= card(variant: 'white') do %>
-            <div class="row">
-              <div class="col-xs-12 col-md-6">
-                <div class="o-label__wrapper">
-                  <label for="1" class="o-label u-color--shade">First Name</label>
-                  <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
-                </div>
-                <input id="1" class="o-input" placeholder="Matt"/>
-              </div>
-              <div class="col-xs-12 col-md-6">
-                <div class="o-label__wrapper">
-                  <label for="2" class="o-label u-color--shade">Last Name</label>
-                  <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
-                </div>
-                <input id="2" class="o-input" placeholder="Grannell"/>
-              </div>
-            </div>
             <div class="o-label__wrapper">
-              <label for="3" class="o-label u-color--shade">Email</label>
+              <label for="1" class="o-label u-color--shade">First Name</label>
               <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
             </div>
-            <input id="3" class="o-input" placeholder="e.g. matt@grannell.com"/>
+            <input id="1" class="o-input" />
+            <div class="o-label__wrapper">
+              <label for="2" class="o-label u-color--shade">Last Name</label>
+              <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
+            </div>
+            <input id="2" class="o-input" />
+            <div class="o-label__wrapper">
+              <label for="3" class="o-label u-color--shade">Are you married?</label>
+              <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
+            </div>
+            <div class="o-checkbox__wrapper">
+              <input type="checkbox" id="3" class="o-checkbox__input"/>
+              <div class="o-checkbox__icon-wrapper">
+                <svg class="o-checkbox__icon" viewBox="0 0 50 50">
+                  <title>Tick</title>
+                  <path d="M18.037212,32.5016781 L9.76776695,24.232233 C8.79145622,23.2559223 7.20854378,23.2559223 6.23223305,24.232233 C5.25592232,25.2085438 5.25592232,26.7914562 6.23223305,27.767767 L16.232233,37.767767 C17.1938897,38.7294236 18.7478682,38.7459534 19.7297634,37.8049705 L43.7297634,14.8049705 C44.7266211,13.8496486 44.7602925,12.2670943 43.8049705,11.2702366 C42.8496486,10.2733789 41.2670943,10.2397075 40.2702366,11.1950295 L18.037212,32.5016781 Z" id="Path"></path>
+                </svg>
+              </div>
+              <label for="3" class="o-checkbox__label"></label>
+            </div>
             <div class="u-clearfix">
               <button class="o-btn c-btn c-btn--right c-btn--success v-full"> Create Person </button>
               <button class="o-btn c-btn c-btn--left c-btn--error v-lightgray"> Cancel </button>
             </div>
           <% end %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-<section class="u-bg--night u-padding-y-50">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 offset-md-2 col-md-8">
-        <%= card(variant: 'night-115') do %>
-          <h2 class="o-text--subtitle u-color--white">Create a person</h2>
-          <%= card(variant: 'white') do %>
-            <div class="row">
-              <div class="col-xs-12 col-md-6">
-                <div class="o-label__wrapper">
-                  <label for="1" class="o-label u-color--shade">First Name</label>
-                  <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
-                </div>
-                <input id="1" class="o-input" placeholder="Matt"/>
-              </div>
-              <div class="col-xs-12 col-md-6">
-                <div class="o-label__wrapper">
-                  <label for="2" class="o-label u-color--shade">Last Name</label>
-                  <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
-                </div>
-                <input id="2" class="o-input" placeholder="Grannell"/>
-              </div>
-            </div>
-            <div class="o-label__wrapper">
-              <label for="3" class="o-label u-color--shade">Email</label>
-              <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
-            </div>
-            <input id="3" class="o-input" placeholder="e.g. matt@grannell.com"/>
-            <div class="u-clearfix">
-              <button class="o-btn c-btn c-btn--right c-btn--success v-full"> Create Person </button>
-              <button class="o-btn c-btn c-btn--left c-btn--error v-lightgray"> Cancel </button>
-            </div>
-          <% end %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-<section class="u-bg--secondary u-padding-y-50">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 offset-md-2 col-md-8">
-        <h1 class="o-text--title u-color--white">Person</h1>
-        <%= card(variant: 'white') do %>
-          <div class="o-label__wrapper">
-            <label for="1" class="o-label u-color--shade">First Name</label>
-            <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
-          </div>
-          <input id="1" class="o-input" />
-          <div class="o-label__wrapper">
-            <label for="2" class="o-label u-color--shade">Last Name</label>
-            <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
-          </div>
-          <input id="2" class="o-input" />
-          <div class="u-clearfix">
-            <button class="o-btn c-btn c-btn--right c-btn--success v-full"> Create Person </button>
-            <button class="o-btn c-btn c-btn--left c-btn--error v-lightgray"> Cancel </button>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-<section class="u-bg--shade u-padding-y-50">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 offset-md-2 col-md-4">
-        <h1 class="o-text--title u-color--white">Person</h1>
-        <%= card(variant: 'night') do %>
-          <div class="o-label__wrapper">
-            <label for="1" class="o-label u-color--white">First Name</label>
-            <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
-          </div>
-          <input id="1" class="o-input v-shade" />
-          <div class="o-label__wrapper">
-            <label for="2" class="o-label u-color--white">Last Name</label>
-            <abbr class="o-label o-label o-label--right u-color--silver">*Required</abbr>
-          </div>
-          <input id="2" class="o-input v-shade" />
-          <div class="u-clearfix">
-            <button class="o-btn c-btn c-btn--right c-btn--success v-full"> Create Person </button>
-            <button class="o-btn c-btn c-btn--left c-btn--error v-night-115"> Cancel </button>
-          </div>
         <% end %>
       </div>
     </div>

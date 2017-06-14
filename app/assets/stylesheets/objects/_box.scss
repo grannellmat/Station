@@ -11,31 +11,3 @@
   margin: 15px 0;
   padding: 15px;
 }
-
-.o-lockable {
-  position: relative;
-
-  &::after {
-    content: 'locked';
-    pointer-events: none;
-    background: color('night');
-    opacity: 0;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transform: translate3d(0, 15px, 0);
-    transition: opacity .3s, transform .2s;
-    z-index: -1;
-  }
-
-  &.is-locked {
-    &::after {
-      opacity: .8;
-      transform: translate3d(0, 0, 0);
-      transition: opacity .3s, transform .2s;
-      z-index: 1;
-    }
-  }
-}

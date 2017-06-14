@@ -2,7 +2,7 @@
 
 
 //  ================================
-//  ## Object --> Input
+//  ## Object --> Base
 //  ================================
 
 
@@ -18,10 +18,4 @@
   width: 100%;
   height: 50px;
   line-height: 20px;
-
-  &.v-shade {
-    background: color('shade');
-    border-bottom: 4px solid color('silver');
-    color: color('white');
-  }
 }

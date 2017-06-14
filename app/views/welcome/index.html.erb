@@ -1,67 +1,19 @@
 <section class="u-bg--night u-padding-y-50">
   <div class="container">
-    <h1 class="o-text o-text--heading u-color--white">Station</h1>
-    <h2 class="o-text o-text--subheading u-color--gray">Where we arrive @ good design</h2>
-  </div>
-</section>
+    <h1 class="o-text o-text--heading u-color--primary">Station</h1>
 
-<section class="u-bg--success u-padding-y-50">
-  <div class="container">
-    <h2 class="o-text o-text--subheading u-color--night u-margin-0">Where we arrive @ good design</h2>
-  </div>
-</section>
-
-<section class="u-bg--error u-padding-y-50">
-  <div class="container">
-    <h2 class="o-text o-text--subheading u-color--white u-margin-0">Where we arrive @ good design</h2>
-  </div>
-</section>
-
-<section class="u-bg--secondary u-padding-y-50">
-  <div class="container">
-    <h2 class="o-text o-text--subheading u-color--white u-margin-0">Where we arrive @ good design</h2>
+    <%= card(variant: 'night-115') do %>
+      <h2 class="o-text o-text--title u-color--white u-margin-0">Where we arrive @ good design</h2>
+    <% end %>
   </div>
 </section>
 
 <%= render 'shared/palette' %>
 <%= render 'shared/typography' %>
 <%= render 'shared/buttons' %>
+<%= render 'shared/avatars' %>
+<%= render 'shared/tags' %>
 <%= render 'shared/forms' %>
 
-
-<section class="u-bg--lightgray u-padding-y-50">
-  <div class="container">
-    <div class="row">
-
-      <div class="offset-md-4 col-sm-4">
-        <%= card(variant: 'white', js: true, js_controller: 'master') do %>
-          <%= card(variant: 'lightgray') do %>
-
-            <i class="o-icon o-icon--xl u-color--secondary u-display--block u-margin--x-auto">
-              <%= render 'shared/loader' %>
-            </i>
-
-          <% end %>
-          <div class="u-clearfix">
-            <button
-              class="o-btn c-btn c-btn--right c-btn--success v-lightgray js-state-manipulator"
-              data-set-state="is-loading"
-              data-state-manipulator="master">
-              Load
-            </button>
-
-            <button
-              class="o-btn c-btn c-btn--left c-btn--error v-lightgray js-state-manipulator"
-              data-set-state="is-neutral"
-              data-state-manipulator="master">
-              Stop
-            </button>
-          </div>
-        <% end %>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
