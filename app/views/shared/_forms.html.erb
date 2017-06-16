@@ -32,13 +32,22 @@
             </div>
             <div class="o-checkbox__wrapper">
               <input type="checkbox" id="3" class="o-checkbox__input"/>
-              <div class="o-checkbox__icon-wrapper">
+              <div class="o-checkbox__icon-wrapper when-checked">
                 <svg class="o-checkbox__icon" viewBox="0 0 50 50">
                   <title>Tick</title>
-                  <path d="M18.037212,32.5016781 L9.76776695,24.232233 C8.79145622,23.2559223 7.20854378,23.2559223 6.23223305,24.232233 C5.25592232,25.2085438 5.25592232,26.7914562 6.23223305,27.767767 L16.232233,37.767767 C17.1938897,38.7294236 18.7478682,38.7459534 19.7297634,37.8049705 L43.7297634,14.8049705 C44.7266211,13.8496486 44.7602925,12.2670943 43.8049705,11.2702366 C42.8496486,10.2733789 41.2670943,10.2397075 40.2702366,11.1950295 L18.037212,32.5016781 Z" id="Path"></path>
+                  <polygon points="10.1213203 24.0786797 5.87867966 28.3213203 17.3598096 39.8024503 43.9877216 16.2469897 40.0122784 11.7530103 17.6116189 31.5689783"></polygon>
                 </svg>
               </div>
-              <label for="3" class="o-checkbox__label"></label>
+              <label for="3" class="o-checkbox__label u-color when-checked">Yes I am married</label>
+
+              <div class="o-checkbox__icon-wrapper when-unchecked">
+                <svg class="o-checkbox__icon" viewBox="0 0 50 50">
+                  <title>Cross</title>
+                  <polygon points="20.4880066 24.8526861 10.9126022 34.4280904 15.1552429 38.6707311 24.7306472 29.0953268 34.3060516 38.6707311 38.5486923 34.4280904 28.9732879 24.8526861 38.5486923 15.2772818 34.3060516 11.0346411 24.7306472 20.6100454 15.1552429 11.0346411 10.9126022 15.2772818 20.4880066 24.8526861"></polygon>
+                </svg>
+              </div>
+              <label for="3" class="o-checkbox__label u-color when-unchecked">No I am not married</label>
+
             </div>
             <div class="u-clearfix">
               <button class="o-btn c-btn c-btn--right c-btn--success v-full"> Create Person </button>
@@ -51,3 +60,5 @@
   </div>
 
 </section>
+
+

@@ -7,12 +7,13 @@
 
 .o-checkbox__wrapper {
   position: relative;
+  display: flex;
   margin-top: 5px;
   margin-bottom: 15px;
   width: 100%;
   height: 50px;
-  background: color('lightgray');
-  border-bottom: 4px solid color('gray');
+  overflow: hidden;
+  border-radius: $br;
 }
 
 .o-checkbox__input {
@@ -26,34 +27,52 @@
   height: 50px;
   width: 100%;
   z-index: 2;
+
+  & ~ .when-unchecked { display: flex; }
+  & ~ .when-checked { display: none; }
+  &:checked {
+    & ~ .when-unchecked { display: none; }
+    & ~ .when-checked { display: flex; }
+  }
 }
-
-
 
 .o-checkbox__icon-wrapper {
-  height: 30px;
-  width: 30px;
-  margin: 10px;
-  display: inline-block;
-  border-radius: $br;
-  background: color('white');
-  border: 1px solid color('gray');
-  color: color('gray');
-}
+  display: flex;
+  height: 50px;
+  width: 50px;
+  padding: 12px;
 
-.o-checkbox__input:checked + .o-checkbox__icon-wrapper {
-  background: color('secondary');
-  border: 1px solid color('secondary', 115);
-  color: color('white');
+  color: color('silver');
+  background: color('lightgray');
+  border-bottom: 4px solid color('gray');
+
+  .o-checkbox__input:checked ~ & {
+    color: color('white');
+    background: color('secondary');
+    border-bottom: 4px solid color('secondary', 115);
+  }
 }
 
 .o-checkbox__icon {
-  height: 30px;
-  width: 30px;
-  padding: 5px;
+  height: 26px;
+  width: 26px;
   fill: currentColor;
 }
 
 .o-checkbox__label {
-  //
+  @extend %o-text--label;
+
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+  flex-grow: 2;
+  color: color('silver');
+  background: color('lightgray');
+  border-bottom: 4px solid color('gray');
+
+  .o-checkbox__input:checked ~ & {
+    color: color('white');
+    background: color('secondary');
+    border-bottom: 4px solid color('secondary', 115);
+  }
 }
