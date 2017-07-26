@@ -8,8 +8,16 @@
 .o-icon {
   height: 50px;
   width: 50px;
+  fill: currentColor;
 
   // Dimension variants
+  &--inline {
+    position: absolute;
+    height: 1.5em;
+    width: 1.5em;
+    margin-left: -2em;
+  }
+
   &--xl {
     height: 75px;
     width: 75px;
@@ -62,4 +70,18 @@
   .u-fill--variant-100 { fill: color('gray'); }
   .u-fill--variant-115 { fill: color('silver'); }
   .u-fill--variant-130 { fill: color('shade'); }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.o-loader {
+  transform-origin: center;
+  animation: loader linear .5s infinite;
 }

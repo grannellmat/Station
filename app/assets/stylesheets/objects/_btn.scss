@@ -21,6 +21,8 @@
   padding: 15px;
   min-width: 100px;
   text-align: center;
+
+  &__icon { padding-left: calc(15px + 1.5em); }
 }
 
 .c-btn {

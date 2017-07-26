@@ -45,5 +45,32 @@
       <button class="o-btn c-btn c-btn--left v-full c-btn--warning u-spacer--sm-r"> Warning </button>
       <button class="o-btn c-btn c-btn--left v-full c-btn--error u-spacer--sm-r"> Error </button>
     </div>
+
+    <div class="u-clearfix">
+      <button class="o-btn o-btn__icon c-btn c-btn--left v-full c-btn--white u-spacer--sm-r">
+        <%= render 'icons/cross', classes: 'o-icon o-icon--inline' %>
+        White
+      </button>
+      <button class="o-btn o-btn__icon c-btn c-btn--left v-full c-btn--disabled u-spacer--sm-r">
+        <%= render 'icons/cross', classes: 'o-icon o-icon--inline' %>
+        Disabled
+      </button>
+      <button class="o-btn o-btn__icon c-btn c-btn--left v-full c-btn--action u-spacer--sm-r">
+        <%= render 'icons/loader', classes: 'o-icon o-icon--inline o-loader' %>
+        Action
+      </button>
+      <button class="o-btn o-btn__icon c-btn c-btn--left v-full c-btn--success u-spacer--sm-r">
+        <%= render 'icons/tick', classes: 'o-icon o-icon--inline' %>
+        Success
+      </button>
+      <button class="o-btn o-btn__icon c-btn c-btn--left v-full c-btn--warning u-spacer--sm-r">
+        <%= render 'icons/tick', classes: 'o-icon o-icon--inline' %>
+        Warning
+      </button>
+      <button class="o-btn o-btn__icon c-btn c-btn--left v-full c-btn--error u-spacer--sm-r">
+        <%= render 'icons/cross', classes: 'o-icon o-icon--inline' %>
+        Error
+      </button>
+    </div>
   </div>
 </section>
