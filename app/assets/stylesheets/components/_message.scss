@@ -1,0 +1,47 @@
+
+
+
+//  ================================
+//  ## Component --> Message
+//  ================================
+
+
+.c-message {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+
+  border-radius: $br;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 0px;
+  background: color('lightgray');
+  border-left: 4px solid color('gray');
+  color: color('night');
+  width: 100%;
+  height: 50px;
+  line-height: 20px;
+
+  &.v--action  { color: color('secondary'); border-color: color('secondary');}
+  &.v--error   { color: color('error'); border-color: color('error');}
+  &.v--warning { color: color('warning'); border-color: color('warning');}
+  &.v--success { color: color('success', 130); border-color: color('success');}
+  &.v--night   { color: color('night'); border-color: color('night');}
+  &.v--shade   { color: color('shade'); border-color: color('shade');}
+  &.v--white   { color: color('white'); border-color: color('white');}
+}
+
+  .c-message__information {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-right: 10px;
+    height: 100%;
+
+  }

@@ -1,0 +1,24 @@
+<section class="container">
+  <nav class="c-navigation">
+    <ul class="c-navigation__list">
+      <%= link_to root_path do %>
+        <li class="c-navigation__item u-bg--night-115 v--success">
+          <%= render 'icons/tick', classes: 'o-icon o-icon--inline-flex' %>
+          Intention
+        </li>
+      <% end %>
+      <%= link_to about_path do %>
+        <li class="c-navigation__item u-bg--night-115 v--action">
+          <%= render 'icons/loader', classes: 'o-icon o-icon--inline-flex o-loader' %>
+          About
+        </li>
+      <% end %>
+      <%= link_to contact_path do %>
+        <li class="c-navigation__item u-bg--night-115 v--warning">
+          <%= render 'icons/message', classes: 'o-icon o-icon--inline-flex' %>
+          Contact
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+</section>

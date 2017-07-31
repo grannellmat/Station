@@ -10,12 +10,34 @@
   border-radius: $br;
   margin-top: 5px;
   margin-bottom: 15px;
-  padding: 15px;
+  padding-left: 15px;
   border: 0px;
   background: color('lightgray');
-  border-bottom: 4px solid color('gray');
+  border-bottom: 4px solid;
+  border-color: color('gray');
   color: color('night');
   width: 100%;
   height: 50px;
   line-height: 20px;
+  transition: border-color .2s ease;
+
+  &.is-valid { border-color: color('success'); transition: border-color .2s ease; }
 }
+
+.o-input-select__wrapper {
+  position: relative;
+}
+
+  .o-input-select {
+    -webkit-appearance: none;
+  }
+
+  .o-input-select__icon {
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    padding: 10px;
+    color: color('silver');
+  }
+

@@ -1,0 +1,52 @@
+
+
+
+//  ================================
+//  ## Component --> Navigation
+//  ================================
+
+.c-navigation {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 100%;
+}
+
+  .c-navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+  }
+
+    .c-navigation__item {
+      @extend %o-text--label;
+      @extend %hover--pointer;
+      list-style: none;
+
+      display: inline-flex;
+      flex-shrink: 1;
+      justify-content: center;
+
+      border-bottom: solid 3px;
+      outline: 0;
+      background: transparentize(color('white'), 0.5);
+
+      margin: 0;
+      padding: 15px;
+      height: 50px;
+      min-width: 100px;
+      text-align: center;
+
+      &.v--action  { color: color('secondary'); border-color: color('secondary');}
+      &.v--error   { color: color('error'); border-color: color('error');}
+      &.v--warning { color: color('warning'); border-color: color('warning');}
+      &.v--success { color: color('success', 130); border-color: color('success');}
+      &.v--night   { color: color('night'); border-color: color('night');}
+      &.v--white   { color: color('white'); border-color: color('white');}
+    }
+

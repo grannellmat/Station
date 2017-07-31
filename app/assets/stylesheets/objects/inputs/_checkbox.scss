@@ -60,7 +60,7 @@
 }
 
 .o-checkbox__label {
-  @extend %o-text--label;
+  @extend %o-text--body;
 
   display: flex;
   height: 50px;

@@ -1,0 +1,17 @@
+<section class="u-bg--gray u-padding-y-50">
+  <div class="container">
+    <h1 class="o-text--title u-color--night">Messages</h1>
+
+    <%= render 'components/message', {
+      icon: 'message',
+      style: ' v--success',
+      message: 'This is a message to you, my darling...'
+    } %>
+
+    <%= render 'components/message', {
+      icon: 'message',
+      style: ' v--shade',
+      message: 'I would just like to tell you...'
+    } %>
+
+</section>
